@@ -1,9 +1,9 @@
 requires 'DateTime';
-requires 'DateTime::Format::HTTP';
 requires 'DateTime::Format::Strptime';
 requires 'DateTime::TimeZone';
 requires 'DateTime::TimeZone::Local';
 requires 'Digest::SHA';
+requires 'HTTP::Date';
 requires 'HTTP::Request';
 requires 'JSON';
 requires 'LWP::Protocol::https';

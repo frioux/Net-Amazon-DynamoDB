@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  * fixed: Wide character in HTTP request (Thanks hikaru yano! GH#15)
   * Clarify the region specification a little bit (Fixes RT#92729, RT#106478)
 
 0.1.16  2012-11-06
