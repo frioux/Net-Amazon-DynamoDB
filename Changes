@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.002000  2017-08-04 11:44:17-07:00 America/Los_Angeles
   * fixed: Wide character in HTTP request (Thanks hikaru yano! GH#15)
   * Clarify the region specification a little bit (Fixes RT#92729, RT#106478)
 
