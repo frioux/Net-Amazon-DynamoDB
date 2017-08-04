@@ -173,9 +173,9 @@ has json => ( isa => 'JSON', is => 'rw', default => sub { JSON->new()->canonical
 =head2 host
 
 DynamoDB API Hostname. Your table will be in this region only. Table names do not
-have to be unique across regions.
+have to be unique across regions.  This is how you specify other regions.  See L<Amazon's documentation for other available endpoints|https://docs.aws.amazon.com/general/latest/gr/rande.html#ddb_region>.
 
-Default: dynamodb.us-east-1.amazonaws.com
+Default: C<dynamodb.us-east-1.amazonaws.com>
 
 =cut
 

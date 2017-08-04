@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  * Clarify the region specification a little bit (Fixes RT#92729, RT#106478)
 
 0.1.16  2012-11-06
   * Fix from fayland for boken merge
