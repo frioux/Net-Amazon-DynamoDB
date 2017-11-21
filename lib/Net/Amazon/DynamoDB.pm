@@ -1938,14 +1938,17 @@ sub scan_items {
             my $rvalue = ref( $val_ref ) || '';
             if ( $rvalue eq 'HASH' ) {
                 my ( $op, $value ) = %$val_ref;
+                my $value_list = (ref $value eq 'ARRAY')
+                    ? [ map { { $type => $_."" } } @$value ]
+                    : [ { $type => $value. '' } ];
                 $s_ref->{ $key } = {
-                    AttributeValueList => [ { $type => $value. '' } ],
+                    AttributeValueList => $value_list,
                     ComparisonOperator => uc( $op )
                 };
             }
             elsif( $rvalue eq 'ARRAY' ) {
                 $s_ref->{ $key } = {
-                    AttributeValueList => [ { $type => $val_ref } ],
+                    AttributeValueList => [ map { { $type => $_."" } } @$val_ref ],
                     ComparisonOperator => 'IN'
                 };
             }
