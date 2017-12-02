@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.002001  2017-12-02 07:35:50-08:00 America/Los_Angeles
  * Fix handling of IN and BETWEEN in scan_items (Thanks Mike Whitaker!)
 
 0.002000  2017-08-04 11:44:17-07:00 America/Los_Angeles
